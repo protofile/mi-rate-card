@@ -176,4 +176,7 @@ body{
     .page-container{
         width: 100%;
     }
+    .product-panel .product-image{
+        padding: 20px;
+    }
 }
