@@ -166,32 +166,114 @@ body{
     opacity: 0.5;
 }
 
-.is-product-grid .custom-column:nth-child(1),
-.is-product-grid .custom-column:nth-child(3),
-.is-product-grid .custom-column:nth-child(5),
-.is-product-grid .custom-column:nth-child(8),
-.is-product-grid .custom-column:nth-child(10),
-.is-product-grid .custom-column:nth-child(12),
-.is-product-grid .custom-column:nth-child(15),
-.is-product-grid .custom-column:nth-child(17),
-.is-product-grid .custom-column:nth-child(19){
-    width: 25%;
+.product-grid{
+    float: left;
+    width: 100%;
 }
-.is-product-grid .custom-column:nth-child(4),
-.is-product-grid .custom-column:nth-child(6),
-.is-product-grid .custom-column:nth-child(7),
-.is-product-grid .custom-column:nth-child(11),
-.is-product-grid .custom-column:nth-child(13),
-.is-product-grid .custom-column:nth-child(14),
-.is-product-grid .custom-column:nth-child(18),
-.is-product-grid .custom-column:nth-child(20),
-.is-product-grid .custom-column:nth-child(21){
+.product-grid .custom-column .flat-card{
+    display: block;
+}
+.product-grid .custom-column{
+    float: left;
+    margin: 1%;
+}
+
+.product-grid .custom-column:nth-child(7n-6),
+.product-grid .custom-column:nth-child(7n-4),
+.product-grid .custom-column:nth-child(7n-2){
+    width: 23% !important;
+}
+.product-grid .custom-column:nth-child(7n-3),
+.product-grid .custom-column:nth-child(7n-1),
+.product-grid .custom-column:nth-child(7n){
+    width: 48% !important;
+}
+.product-grid .custom-column:nth-child(7n-3) .flat-card .image,
+.product-grid .custom-column:nth-child(7n-1) .flat-card .image,
+.product-grid .custom-column:nth-child(7n) .flat-card .image,
+.product-grid .custom-column:nth-child(7n-3) .flat-card .product-info,
+.product-grid .custom-column:nth-child(7n-1) .flat-card .product-info,
+.product-grid .custom-column:nth-child(7n) .flat-card .product-info{
     width: 50%;
 }
-.is-product-grid .custom-column:nth-child(2),
-.is-product-grid .custom-column:nth-child(9),
-.is-product-grid .custom-column:nth-child(16){
-    width: 75%;
+.product-grid .custom-column:nth-child(7n-3) .flat-card .image img,
+.product-grid .custom-column:nth-child(7n-1) .flat-card .image img,
+.product-grid .custom-column:nth-child(7n) .flat-card .image img,
+.product-grid .custom-column:nth-child(7n-5) .flat-card .image img{
+    max-width: 220px;
+    height: auto;
+}
+.product-grid .custom-column:nth-child(7n-3) .flat-card .product-info,
+.product-grid .custom-column:nth-child(7n-1) .flat-card .product-info,
+.product-grid .custom-column:nth-child(7n) .flat-card .product-info{
+    text-align: left !important;
+}
+.product-grid .custom-column:nth-child(7n-3) .flat-card .product-info h3,
+.product-grid .custom-column:nth-child(7n-1) .flat-card .product-info h3,
+.product-grid .custom-column:nth-child(7n) .flat-card .product-info h3{
+    font-size: 16px;
+}
+.product-grid .custom-column:nth-child(7n-3) .flat-card,
+.product-grid .custom-column:nth-child(7n-1) .flat-card,
+.product-grid .custom-column:nth-child(7n) .flat-card{
+    display: flex;
+    align-items: center;
+}
+
+.product-grid .custom-column:nth-child(7n-5){
+    width: 73%;
+}
+.product-grid .custom-column:nth-child(7n-5) .flat-card{
+    display: flex;
+    align-items: center;
+}
+.product-grid .custom-column:nth-child(7n-5) .flat-card .image{
+    width: 45%;
+}
+.product-grid .custom-column:nth-child(7n-5) .flat-card .product-info{
+    width: 55%;
+    text-align: left !important;
+} 
+.product-grid .custom-column:nth-child(7n-5) .flat-card .product-info h3{
+    font-size: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.product-info-panel .panel-body p.product-description{
+    color: #555 !important;
+}
+.product-info-panel .panel-body h5{
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+.product-info-panel .panel-body table{
+    width: 100%;
+    float: left;
+}
+.product-info-panel .panel-body table td{
+    color: #555;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+.product-info-panel .panel-body table tr:nth-child(odd) td{
+    background: #fafafa;
+}
+.product-info-panel .panel-body table th{
+    background: #111;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+.product-info-panel .panel-body table th:nth-child(even){
+    background: #444;
+}
+.product-controls{
+    display: block !important;
 }
 
 @media only screen and (max-width: 768px){
