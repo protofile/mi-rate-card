@@ -240,6 +240,11 @@ body{
 .mb-20{
     margin-bottom: 20px;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-100{margin-bottom: 100px;}
+.pb-100{padding-bottom: 100px;}
 .product-info-panel .panel-body p.product-description{
     color: #555 !important;
 }
@@ -262,6 +267,9 @@ body{
 }
 .product-info-panel .panel-body table tr:nth-child(odd) td{
     background: #fafafa;
+}
+.product-info-panel .panel-body table tr:last-child td{
+    border-bottom: 1px solid #ccc;
 }
 .product-info-panel .panel-body table th{
     background: #111;
@@ -288,6 +296,9 @@ body{
 }
 .icon-link:hover{
     opacity: 1;
+}
+.product-info-panel .inner-panel{
+    height: auto;
 }
 
 @media only screen and (max-width: 768px){
